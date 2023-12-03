@@ -5,9 +5,9 @@ const StudentHome=()=>{
 return(
 <>
 <main className="row m-auto col-12">
-    <AcustomNavBar/>
+    <AcustomNavBar institutionName="student"/>
     <section className="sticky-top top-50 col-md-3">
-        <StudentSideBar/>
+        <StudentSideBar class="text-danger fw-bolder"/>
     </section>
     <section className="col-md-7 m-auto">
         <div className="table-responsive">
