@@ -6,6 +6,12 @@ return(
    <section>
         <AcustomNavBar/>
     </section>
+    <div className="form-floating mb-3">
+      <input
+        type="text"
+        className="form-control" name="formId1" id="formId1" placeholder=""/>
+      <label>Name</label>
+    </div>
     <section>
     </section>     
 </main>
