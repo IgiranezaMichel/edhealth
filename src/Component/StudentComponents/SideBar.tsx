@@ -1,4 +1,4 @@
-const StudentSideBar=()=>{
+const SideBar=()=>{
 return(
 <main>
     <section className="card bg-white" style={{height:'85dvh'}}>
@@ -23,4 +23,4 @@ return(
     </section>
 </main>
 )}
-export default StudentSideBar
+export default SideBar

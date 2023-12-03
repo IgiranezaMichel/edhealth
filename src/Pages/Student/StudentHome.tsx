@@ -1,5 +1,5 @@
 import AcustomNavBar from "../../Component/StudentComponents/AcustomNavBar";
-import StudentSideBar from "../../Component/StudentComponents/StudentSideBar";
+import StudentSideBar from "../../Component/StudentComponents/SideBar";
 
 const StudentHome=()=>{
 return(

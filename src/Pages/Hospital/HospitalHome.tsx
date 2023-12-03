@@ -1,10 +1,12 @@
 import AcustomNavBar from "../../Component/StudentComponents/AcustomNavBar";
+import SideBar from "../../Component/StudentComponents/SideBar";
 
 const HospitalHome=()=>{
 return(
 <main className="row col-12 m-auto">
-   <section>
-        <AcustomNavBar/>
+<AcustomNavBar/>
+   <section className="col-md-3">
+    <SideBar/>
     </section>
     <div className="form-floating mb-3">
       <input
