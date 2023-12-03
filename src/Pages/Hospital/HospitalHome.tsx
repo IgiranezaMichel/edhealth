@@ -10,7 +10,7 @@ return(
 </div>
 <section className="row col-12 m-auto  mt-5 overflow-auto">
    <section className="col-md-3 overflow-auto" >
-        <SideBar/>
+        <SideBar class="text-info fw-bolder"/>
     </section> 
     <section className="col-md-9 overflow-auto">
         <div className="card px-3 py-3 mt-3">
