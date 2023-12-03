@@ -5,7 +5,7 @@ const NcnmHome=()=>{
 return(
 <>
 <main className="row m-auto col-12">
-    <AcustomNavBar institutionName="student"/>
+    <AcustomNavBar institutionName="NCNM"/>
     <section className="sticky-top top-50 col-md-3">
         <SideBar class="text-primary fw-bolder"/>
     </section>
