@@ -1,7 +1,7 @@
 const HospitalHome=()=>{
-    return(
-        <>
-        </>
-    )
-}
+return(
+<main>
+        
+</main>
+)}
 export default HospitalHome;
