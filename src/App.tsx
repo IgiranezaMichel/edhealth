@@ -1,12 +1,16 @@
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap/dist/js/bootstrap.js'
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import StudentHome from './Pages/Student/StudentHome';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Signup from './Pages/Visitor/Auth/Signup';
+import HospitalHome from './Pages/Hospital/HospitalHome';
 function App() {
+  localStorage.setItem('','');
   return (
     <>
-  <StudentHome/>
- 
+ <Router>
+    <Routes>
+      <Route path='/' element={<Signup/>}/>
+      <Route path='/hospital' element={<HospitalHome/>}/>
+    </Routes>
+ </Router>
     </>
   )
 }
