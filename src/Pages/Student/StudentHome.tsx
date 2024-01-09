@@ -1,49 +1,80 @@
-import AcustomNavBar from "../../Component/StudentComponents/AcustomNavBar";
-import StudentSideBar from "../../Component/StudentComponents/SideBar";
+import { Link } from "react-router-dom";
+import { StudentNavigation } from "../../Component/StudentComponents/StudentNavigation";
 
 const StudentHome=()=>{
 return(
-<>
-<main className="row m-auto col-12">
-    <AcustomNavBar institutionName="student"/>
-    <section className="sticky-top top-50 col-md-3">
-        <StudentSideBar class="text-danger fw-bolder"/>
-    </section>
-    <section className="col-md-7 m-auto">
-        <div className="table-responsive">
-            <table className="table table-white border">
-            <thead className="table-white">
-                <tr className="table-white">
-                    <td colSpan={3} className="display-6 fw-bolder">Student Certificates</td>
-                    <td colSpan={2}>
-                        <div>
-                          <input type="text"
-                              className="w-75 rounded-4" style={{boxShadow:'2px 4 px blue'}} name="" id="" aria-describedby="helpId" placeholder="Search ..."/><button type="button" className="btn rounded-circle bg-dark text-white m-2 py-2"><i className="bi bi-search" aria-hidden="true"></i></button>
+<StudentNavigation>
+<div className="table-responsive-md rounded-5 bg-light mb-5 border border-dark p-3">
+                <table className="table table-light border-0">
+                    <thead>
+                        <tr>
+                            <th scope="col" className="p-3" colSpan={5}>Student Registered</th>
+                            <th scope="col">
+                                <div className="float-end p-3">
+                                    <input type="text" placeholder="search .." />
+                                    <button>
+                                        <i className="bi bi-search" />
+                                    </button>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="col">National Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th>Gender</th>
+                            <th>Date of Birth</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">Item</td>
+                            <td>Item</td>
+                            <td>Item</td>
+                            <td>Item</td>
+                            <td scope="row">Item</td>
+                            <td>Item</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            {/*  */}
+            <div className="card border border-black bg-light">
+                <div className="card-body">
+                    <h5 className="card-title fw-bold">View Academic Records</h5>
+                    <section className="row col-sm-10 m-auto">
+                        <div className="float-end p-3">
+                            <input className="rounded border-secondary float-end" type="text" placeholder="search .." />
                         </div>
-                    </td>
-                </tr>
-                <tr className="table-secondary">
-                    <th>Training</th>
-                    <th>User</th>
-                    <th>Received Date</th>
-                    <th>Expiration Date</th>
-                    <th>Payment</th>
-                </tr>
-            </thead>
-                <tbody>
-                <tr>
-                        <td scope="row">Item</td>
-                        <td>Item</td>
-                        <td>Item</td>
-                        <td>Item</td>
-                        <td>Item</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-</main>
-</>
+                        <section className="col-sm-6">
+                            <div className="form-floating mb-3">
+                                <input type="email" className="form-control" />
+                                <label>Anual Report Marks</label>
+                            </div>
+                            <div className="form-floating mb-3">
+                                <input type="email" className="form-control" />
+                                <label>User Marks</label>
+                            </div>
+                        </section>
+                        <section className="col-sm-6">
+                            <div className="form-floating mb-3">
+                                <input type="email" className="form-control" />
+                                <label>Anual Description Marks</label>
+                            </div>
+                            <div className="form-floating mb-3">
+                                <input type="email" className="form-control" />
+                                <label>School Id</label>
+                            </div>
+                        </section>
+                        <section className="text-center">
+                            <button className="fw-bolder fs-5 text-light border-0 ro" style={{ backgroundColor: '#93499F' }}>REGISTER</button>
+                            <Link to={'/'} className="fw-bolder mx-3" style={{ color: '#93499F', textDecoration: 'none' }}>View Registered</Link>
+                        </section>
+                    </section>
+                </div>
+            </div>
+</StudentNavigation>
 )
 }
 export default StudentHome;
