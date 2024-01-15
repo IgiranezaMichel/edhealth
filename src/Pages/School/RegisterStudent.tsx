@@ -5,6 +5,10 @@ export const RegisterStudent=()=>{
     const [lastName,setLastName]=useState('');
     const [nationalId,setNationalId]=useState('');
     const [gender,setGender]=useState('');
+    const validateUserInput=()=>{
+        if(firstName=='')
+        toast.error('First name is required')
+    }
     return(
         <main className="row g-3 d-flex align-content-center justify-content-center col-12">
          <div className="fw-bold text-center">
