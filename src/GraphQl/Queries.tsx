@@ -118,8 +118,23 @@ query {
 export const TRAINING_LIST_PAGINATION=gql`
 query($pageNumber:Int,$pageSize:Int,$sortBy:String,$behaviour:String,$status:Boolean){
     trainingListPagination(pageNumber:$pageNumber,pageSize:$pageSize,sortBy:$sortBy,behaviour:$behaviour,status:$status){
-        title
-        description
-    } 
+        content{
+      title
+      hospital{
+        name
+        logo
+        location{
+          name
+          location{
+            name
+            location{
+              name
+            }
+          }
+        }
+      }
+      postDate
+    }
+    }
 }
 `
