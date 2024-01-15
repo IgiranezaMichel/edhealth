@@ -8,11 +8,11 @@ export const NcnmCertificate=()=>{
         <NcnmNavigationBar>
             <div className="fw-bold  display-6  bg-secondary-subtle mt-2 p-3">Available Certificates</div>
             <section className="col-sm-4 mb-4">
-                <div className="row m-auto bg-primary-subtle">
-                    <div className="card bg-primary-subtle col-sm-6 rounded-0" style={{ border: 'none', borderLeft: '20px solid grey' }}>
+                <div className="row m-auto bg-secondary-subtle">
+                    <div className="card bg-secondary-subtle col-sm-6 rounded-0" style={{ border: 'none', borderLeft: '20px solid grey' }}>
                         <i className="bi bi-file-fill display-1"></i>
                     </div>
-                    <div className="card col-sm-6 d-flex bg-primary-subtle justify-content-center border-0">
+                    <div className="card col-sm-6 d-flex bg-secondary-subtle justify-content-center border-0">
                         <div>Total Certificate <span className="badge bg-primary">0
                             {/* {hospitalSize.data && <>{hospitalSize.data.hospitalSize}</>} */}
                         </span></div>
