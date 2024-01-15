@@ -44,13 +44,13 @@ export const CertifiedUser=()=>{
     }
     return(
         <NcnmNavigationBar>
-            <div className="fw-bold  display-6  bg-secondary mt-2 p-3">Certified Users </div>
+            <div className="fw-bold  display-6  bg-secondary-subtle mt-2 p-3">Certified Users </div>
             <section className="col-sm-4 ">
                 <div className="row m-auto bg-primary-subtle">
-                    <div className="card bg-primary-subtle col-sm-6 rounded-0" style={{ border: 'none', borderLeft: '20px solid rgb(105,20,60)' }}>
+                    <div className="card bg-secondary-subtle col-sm-6 rounded-0" style={{ border: 'none', borderLeft: '20px solid rgb(105,20,60)' }}>
                         <i className="bi bi-people-fill display-1"></i>
                     </div>
-                    <div className="card col-sm-6 d-flex bg-primary-subtle justify-content-center border-0">
+                    <div className="card col-sm-6 d-flex bg-secondary-subtle justify-content-center border-0">
                         <div>Total Users<span className="badge bg-primary">
                             {/* {data && <>{numberOfUsers.data.numberOfUsers}</>} */}
                         </span>
