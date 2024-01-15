@@ -137,4 +137,16 @@ query($pageNumber:Int,$pageSize:Int,$sortBy:String,$behaviour:String,$status:Boo
     }
     }
 }
+`;
+export const SEARCH_STUDENT=gql`
+query($schoolId:Long,$search:String){
+ searchStudent(schoolId:$schoolId,search:$search){
+  id
+  name
+  gender
+  email
+  phoneNumber
+  dob
+}
+}
 `
