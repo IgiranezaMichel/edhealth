@@ -70,13 +70,13 @@ export const NcnmSchools=()=>{
     }
     return(
         <NcnmNavigationBar>
- <div className="fw-bold  display-6  bg-primary-subtle mt-2 p-3">Ncnm Schools</div>
+ <div className="fw-bold  display-6  bg-secondary-subtle mt-2 p-3">Ncnm Schools</div>
             <section className="col-sm-4 ">
-                <div className="row m-auto bg-primary-subtle">
-                    <div className="card bg-primary-subtle col-sm-6 rounded-0" style={{ border: 'none', borderLeft: '20px solid rgb(25,54,60)' }}>
+                <div className="row m-auto bg-secondary-subtle">
+                    <div className="card bg-secondary-subtle col-sm-6 rounded-0" style={{ border: 'none', borderLeft: '20px solid rgb(25,54,60)' }}>
                         <i className="bi bi-houses-fill display-1"></i>
                     </div>
-                    <div className="card col-sm-6 d-flex bg-primary-subtle justify-content-center border-0">
+                    <div className="card col-sm-6 d-flex bg-secondary-subtle justify-content-center border-0">
                         <div>Total School <span className="badge bg-primary">
                         {schoolSize.data && <>{schoolSize.data.schoolSize}</>}
                         </span>
@@ -113,6 +113,7 @@ export const NcnmSchools=()=>{
                                         <select onChange={e => setSortBy(e.target.value)} className="bg-warning fw-bold" aria-label="Default select example">
                                             <option value={'name'} selected={sortBy == 'name' ? true : false}>Name</option>
                                             <option value={'createdOn'} selected={sortBy == 'createdOn' ? true : false}>Date of Creation</option>
+                                            <option value={'location'} selected={sortBy == 'location' ? true : false}>Location</option>
                                         </select>
                                     </span>
                                 </span>
@@ -143,7 +144,7 @@ export const NcnmSchools=()=>{
                                                         <i className='bi bi-house-fill'></i>
                                                     </p>
                                                     <p className="card-text mb-2">
-                                                        <i className='bi bi-geo-fill'></i>
+                                                        <i className='bi bi-geo-fill'></i> {data.location&&<span>{data.location.location.location.name}/{data.location.location.name}/{data.location.name}</span>}
                                                     </p>
                                                     <p className="card-text mb-2">
                                                         <i className='bi bi-people-fill'></i> Students <span  className="badge bg-primary">New</span>
