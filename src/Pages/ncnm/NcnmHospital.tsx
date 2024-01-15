@@ -106,13 +106,13 @@ export const NcnmHospital = () => {
     </div>;
     return (
         <NcnmNavigationBar>
-            <div className="fw-bold  display-6  bg-primary-subtle mt-2 p-3">Manage Hospital</div>
+            <div className="fw-bold  display-6  bg-secondary-subtle mt-2 p-3">Manage Hospital</div>
             <section className="col-sm-4 ">
-                <div className="row m-auto bg-primary-subtle">
-                    <div className="card bg-primary-subtle col-sm-6 rounded-0" style={{ border: 'none', borderLeft: '20px solid grey' }}>
+                <div className="row m-auto bg-secondary-subtle">
+                    <div className="card bg-secondary-subtle col-sm-6 rounded-0" style={{ border: 'none', borderLeft: '20px solid grey' }}>
                         <i className="bi bi-hospital-fill display-1"></i>
                     </div>
-                    <div className="card col-sm-6 d-flex bg-primary-subtle justify-content-center border-0">
+                    <div className="card col-sm-6 d-flex bg-secondary-subtle justify-content-center border-0">
                         <div>Total Hospital <span className="badge bg-primary">
                             {data && <>{data.hospitaListPagination.size}</>}
                         </span></div>
